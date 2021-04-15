@@ -1,4 +1,8 @@
 import { DataService } from './DataService.js';
+import './style.css';
+import state from './assets/state.png';
+import github from './assets/GitHub.png';
+
 const ds = new DataService();
 
 const host = 'http://localhost:5000';
@@ -7,6 +11,9 @@ const url2 = host + '/api/state/stats';
 const formsUrl = host + '/api/state/form';
 
 ds.getState(url2).then((e) => createStats(e));
+
+document.getElementById('gitHubIMG').src = github;
+document.getElementById('stateOfJSIMG').src = state;
 
 const modal = document.getElementById('survey');
 const btn = document.getElementById('surveyBtn');
