@@ -5,7 +5,7 @@ import github from './assets/GitHub.png';
 
 const ds = new DataService();
 
-const host = 'http://localhost:5000';
+const host = 'https://stan-js.herokuapp.com/';
 
 const url2 = host + '/api/state/stats';
 const formsUrl = host + '/api/state/form';
