@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>state</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href=".favicon.ico" />
+        <script src="./index.js" type="module"></script>
+    </head>
+    <body>
+        <div id="header"><h1>Stan.JS</h1></div>
+        <div id="info">
+            <div>
+                <aritcle>
+                    <p>
+                        State of JS jest corocznym badaniem mającym na celu przedstawienie trendów wśród web
+                        developerów. Aby wziąć w nim udział należy wypełnić ankietę składającą się z około 100 pytań.
+                        Pierwsza edycja State of JS odbyła się w 2016 roku i wzięło w niej udział 9 tysięcy osób. Z roku
+                        na rok rośnie popularość badania, dzięki czemu w ostateniej edycji brało udział około 20 tys
+                        osób z całego świata.
+                    </p>
+                    <p>Analiza zebranych danych pozwala poznać odpowidzi na pytania takie jak:</p>
+                    <ul>
+                        <li>Developerzy którego frameworka są najszczęśliwsi?</li>
+                        <li>Których technologii najchętniej nauczą się ankietowani w przyszłości?</li>
+                        <li>Jakie technologie zyskują na popularności?</li>
+                    </ul>
+                    <p>Projekt Stan.JS został stworzony z wykorzystaniem:</p>
+                    <ul>
+                        <li>MongoDB - baza danych przechowująca ponad 20 tys dokumentów</li>
+                        <li>Node.JS, Express - backend</li>
+                        <li>JS - zapewnia komunikację pomiędzy frontendem, a backendem</li>
+                        <li>HTML, CSS - napisane własnoręcznie do prezentacji danych</li>
+                    </ul>
+                    <p id="documentsCount"><span>Obecnie w bazie znajduje się </span></p>
+                </aritcle>
+                <h1>
+                    Dane użyte na tej stronie pochodzą z badania <a href="https://stateofjs.com/">State of JS</a> z 2019
+                    roku.
+                </h1>
+            </div>
+            <img src="assets/state.png" />
+        </div>
+        <div id="btnDiv">
+            <button id="surveyBtn">WYPEŁNIJ ANKIETĘ</button>
+        </div>
+        <div>
+            <div id="survey" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Wypełnij ankietę</p>
+                    <div id="form">
+                        <div>
+                            <label for="os-form">System operacyjny</label>
+                            <select id="os-form"></select>
+                        </div>
+                        <div>
+                            <label for="browser-form">Przeglądarka używana podczas tworzenia stron</label>
+                            <select id="browser-form"></select>
+                        </div>
+                        <div>
+                            <label for="device-form">Typ urządzenia z którego korzystasz</label>
+                            <select id="device-form"></select>
+                        </div>
+                        <div>
+                            <label for="jobTitle-form">Rodzaj stanowiska</label>
+                            <select id="jobTitle-form"></select>
+                        </div>
+                        <div>
+                            <label for="experience-form">Doświadczenie (lata)</label>
+                            <select id="experience-form"></select>
+                        </div>
+                        <div>
+                            <label for="salary-form">Zarobki (tys $ rocznie)</label>
+                            <select id="salary-form"></select>
+                        </div>
+                        <p>Umiejętności w skali 0-5 (0-brak, 5-expert)</p>
+                        <div>
+                            <label for="frontend-form">Frontend</label>
+                            <select id="frontend-form"></select>
+                        </div>
+                        <div>
+                            <label for="backend-form">Backend</label>
+                            <select id="backend-form"></select>
+                        </div>
+                        <div>
+                            <span id="info-form"></span>
+                            <button id="send-form">Wyślij</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="reports"></div>
+        <div class="footer">
+            <p>copyright barjb</p>
+            <a href="https://github.com/barjb">
+                <img src="./assets/GitHub-Mark-120px-plus.png" />
+            </a>
+        </div>
+    </body>
+</html>
